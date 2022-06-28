@@ -1,0 +1,4 @@
+ToolSet: w64 8.0 (local)@C:\TDM-GCC-64
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=C:/Users/snake/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/ninja/win/ninja.exe

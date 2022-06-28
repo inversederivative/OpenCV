@@ -1,0 +1,3 @@
+C:/Dub/Dub/Taschenrechner/Development/OpenCV/cmake-build-debug/CMakeFiles/OpenCV.dir
+C:/Dub/Dub/Taschenrechner/Development/OpenCV/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Dub/Dub/Taschenrechner/Development/OpenCV/cmake-build-debug/CMakeFiles/rebuild_cache.dir
