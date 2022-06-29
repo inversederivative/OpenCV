@@ -47,8 +47,9 @@
 #
 #----------------------------------------------------------
 
-#set(OpenCV_DIR C:/opencv/MinGW-x64-Build/install)
-find_path(OpenCV_DIR "OpenCVConfig.cmake" C:/opencv/MinGW-x64-Build/install/ DOC "Root directory of OpenCV")
+# DO NOT FORGET that you've got a WSL system, so the path has to be specified accordingly!!!
+# --Inverse Derivative
+find_path(OpenCV_DIR "OpenCVConfig.cmake" /mnt/c/Fedora/build DOC "Root directory of OpenCV")
 
 ##====================================================
 ## Find OpenCV libraries
