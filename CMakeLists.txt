@@ -13,12 +13,9 @@ set( NAME_SRC
 set( NAME_HEADERS
         include/header.h)
 
-
-
-
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
-add_executable(OpenCV src/main.cpp)
+add_executable(OpenCV src/main.cpp include/Chapter1.h src/Chapter1.cpp)
 
 # add libs you need
 set(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
