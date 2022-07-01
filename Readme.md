@@ -7,7 +7,7 @@ This is an implementation of the OpenCV C++ tutorial, by Youtuber "Murtaza's Wor
         This project will not run properly,
          if you have not correctly downloaded,
          built, and configured OpenCV, including
-         setting environment variables.
+         setting system path variable correctly.
 
 
 
@@ -21,9 +21,11 @@ build it with mingw32-make, from a Powershell/CMD in the new MinGW-Build folder 
 I may update this readme with new details.
 
 My default toochain is WSL (Fedora Linux), which works great, but it's quite niche for OpenCV C++ with Windows. 
-I may create a separate Linux distro, but for now, this works. 
+In order to keep from using your default toolchain, and only utiliing the MinGW (TDM) toolchain, we must 
+go to project settings, and then find CMake, then select the appropriate toolchain for the Debug version you're 
+building.
 
-In order to get everything to work properly, after you've built your own MinGW Source, and included the proper path 
+In order to get everything to work properly, after you've built your own OpenCV Source, and included the proper path 
 as I have, and you configure a new MinGW toolchain (based on the TDM-GCC-64 complier we installed earlier) and then the 
 project should run!
 
