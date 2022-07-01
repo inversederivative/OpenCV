@@ -4,29 +4,56 @@
 
 #include "../include/Chapter1.h"
 
-int Chapter1::chap1Main()
+void Chapter1::displayImage()
 {
 
-    std::cout << "Hello World!";
-
-
     // Location of Test Image
-    //std::string path = "../Resources/GunnaWunna.png";
-    std::string path2 = "../Resources/Starship.jpg";
-
-    //cv::Mat img = cv::imread(path); // Creating OpenCV "Image" object
-    cv::Mat img2 = cv::imread(path2);
+    std::string imgPath = "../Resources/GunnaWunna.png";
+    cv::Mat img = cv::imread(imgPath); // Creating OpenCV "Image" object
 
     // Create a named Window
     cv::namedWindow("Display Image", cv::WINDOW_AUTOSIZE);
+
     // Show image
-    //cv::imshow("Display Image", img);
-    cv::imshow("Display Image", img2); // Only shows one image.. TODO: Fix me!
+    cv::imshow("Display Image", img);
 
     // Wait forever (or until user closes window)
     cv::waitKey(0);
+}
 
+void Chapter1::displayVideo(int delayMs)
+{
 
+    std::string vidPath = "../Resources/3HS.mp4";
+    cv::VideoCapture cap(vidPath);
+    cv::Mat img;
 
-    return 0;
+    while (true) {
+
+        // Location of Test Image
+
+        cap.read(img);
+        cv::namedWindow("Display Image", cv::WINDOW_AUTOSIZE);
+
+        cv::imshow("Display Image", img);
+        cv::waitKey(delayMs);
+    }
+}
+
+void Chapter1::displayWebcam()
+{
+
+    cv::VideoCapture cap(0);
+    cv::Mat img;
+
+    while (true) {
+
+        // Location of Test Image
+
+        cap.read(img);
+        cv::namedWindow("Display Image", cv::WINDOW_AUTOSIZE);
+
+        cv::imshow("Display Image", img);
+        cv::waitKey(1);
+    }
 }
