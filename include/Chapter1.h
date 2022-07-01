@@ -1,5 +1,5 @@
 //
-// Created by snake on 6/29/2022.
+// Created by InverseDerivative on 6/29/2022.
 //
 
 #ifndef OPENCV_CHAPTER1_H
@@ -18,10 +18,21 @@ public:
 
     /**
      * Chapter 1's Image function, to be called from main.cpp
-     * @return
+     *
      */
     static void displayImage();
+
+    /**
+     * TODO: Describe function
+     *
+     * @param delayMs
+     */
     static void displayVideo(int delayMs);
+
+    /**
+     * TODO: Describe Function
+     *
+     */
     static void displayWebcam();
 };
 
