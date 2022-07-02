@@ -82,6 +82,8 @@ void Chapter2::imageBlurCanny()
      *
      *      With Canny, we're detecting the prominent edges! Remember that you're
      *       adjusting the image, to extract relevant data from it.
+     *
+     *      EDGE DETECTION with CANNY!
      */
 
     cv::Canny(imageBlurred,imageCanny, 50, 150);
