@@ -24,8 +24,4 @@ as I have, and you configure a new MinGW toolchain (based on the TDM-GCC-64 comp
 project should run!
 
 
-
-Email me if you have any Questions: 
-inversederivative@gmail.com
-
 # @InverseDerivative
